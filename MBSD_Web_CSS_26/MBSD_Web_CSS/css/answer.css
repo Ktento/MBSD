@@ -1,0 +1,129 @@
+.bold{
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: gainsboro;/*背景色*/
+  border-left: solid 5px greenyellow;/*左線（実線 太さ 色）*/
+}
+.ttl_background3 {
+  font-weight: bold;
+  padding: 0.5em 1em;
+  background-color: #4c9ac0;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.ttl_background3::after {
+  content: '';
+  background-color: #fff;
+  opacity: 0.3;
+  transform: rotate(-65deg);
+  position: absolute;
+  bottom: -250px;
+  right: -250px;
+  width: 300px;
+  height: 500px;
+}
+
+body{
+  background-color: #f5f5f5;
+}
+p{
+  font-size: 32px;
+}
+.msr_table03 {
+    border-collapse: collapse;
+    border-bottom: 5px solid #000000;
+    border-right: 5px solid #000000;
+    border-left: 5px solid #000000;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+  }
+  .msr_table03 thead th {
+    background-color: #000000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 30px;
+    text-align: center;
+    vertical-align : middle;
+  }
+  .msr_table03 thead th:last-child{
+    border-right:none;
+  }
+  .msr_table03 thead th:first-child{
+    border-left:none;
+  }
+  .msr_table03 thead tr:first-child th {
+    border-bottom:none;
+  }
+  .msr_table03 tbody th {
+    background-color: #FFFFFF;
+    border-bottom: 5px solid #000000;
+    border-right: 5px solid black;
+    border-left: 5px solid #000000;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight:bold;
+    padding: 15px;
+    text-align: center;
+    vertical-align : middle;
+  }
+  .msr_table03 td {
+    background-color: #FFFFFF;
+    border-bottom: 5px solid #000000;
+    border-right: 5px solid #000000;
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .msr_table03 td:first-child {
+    border-left: 5px solid #000000;
+  }
+  .bar-chart-001 {
+    font-size: .9em;
+    margin-top: -250px;
+}
+
+.bar-chart-001 > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    margin-left: 700px;
+}
+
+.bar-chart-001 dt {
+    width: 55px;
+    min-width: 55px;
+    font-size: 15px;
+}
+
+.bar-chart-001 dd {
+    margin: 0;
+    margin-left: 90px;
+    padding-right: 15px;
+    border-radius: 3px;
+    background-color: #2589d0;
+    color: #000000;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: right;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+  .bold {
+    font-weight: bold;
+  }
+
+  h1{
+    background: #c2edff;/*背景色*/
+    padding: 0.5em;/*文字まわり（上下左右）の余白*/
+  }

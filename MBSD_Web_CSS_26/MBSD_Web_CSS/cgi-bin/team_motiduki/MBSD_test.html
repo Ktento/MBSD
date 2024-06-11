@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBSDのテストページです。MBSD{タイトル}</title>
+    <!-- 追加のメタタグ、スタイルシート、スクリプトなどをここに追加 -->
+    <link rel="stylesheet" href="MBSD_tset.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1>こんにちは。<strong>MBSD</strong>のテストをしてみましょう</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <input type="text">
+                <li><a href="#about">About</a></li>
+                <input type="text">
+                <li><a href="#services">Services</a></li>
+                <input type="password">
+                <li><a href="#contact">Contact</a></li>
+                <input type="hidden">
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <section id="home">
+            <h2>MBSD{ｈ２}</h2>
+            MBSD{本文}
+            <!-- ホームセクションのコンテンツ -->
+            <form id="MBSD{form id}">
+                <!-- URL入力フィールド -->
+                <label for="urlInput">URLを入力:</label>
+                <input type="text" id="urlInput" name="urlInput" required>
+                <br>
+        
+                <!-- 送信ボタン -->
+                <input type="button MBSD{input type}" value="Access URL" onclick="accessUrl()">
+            </form>
+        
+            <!-- 結果表示用の要素 -->
+            <div id="result"></div>
+        
+            <script>
+                function accessUrl() {
+                    // フォームからURLを取得
+                    var url = document.getElementById("urlInput").value;
+        
+                    // URLにアクセス（この例ではコンソールに表示）
+                    console.log("Accesed URL:", url);
+        
+                    // ここで取得したURLに対して適切な処理を実行
+                    // 例: 別のウィンドウで開く場合
+                     window.open(url, "_blank");
+        
+                    // 結果を表示
+                    document.getElementById("result").innerText = "Accessed URL: " + url;
+                }
+            </script>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <!-- アバウトセクションのコンテンツ -->
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <p><a href="https://setten.sgec.or.jp/cooperation/109.html"></a></p>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <!-- コンタクトセクションのコンテンツ -->
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <!-- フッターのコンテンツ -->
+        MBSD{フッター}
+    </footer>
+
+    <!-- 追加のスクリプトなどをここに追加 -->
+    <script src="script.js"></script>
+</body>
+
+</html>

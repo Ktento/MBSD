@@ -1,0 +1,23 @@
+<!-- hello.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="Shift_JIS">
+    <title>巡回ツール</title>
+    <link rel="stylesheet" type="text/css" href="hello.css">
+</head>
+<body>
+  <h2 class="ttl_background3">Web アプリケーションを自動で巡回するためのツール</h2>
+<form method="POST" action="cgi-bin/team_motiduki/MBSDmain_HTML.py">
+  <p>巡回したいURLを入力してください。</p>
+    <textarea name="text" cols="50" rows="1">
+    </textarea>
+    <input type="submit" />
+    <label for="programming">
+      <input type="checkbox" name="urllimit" id="urllimit" value="1">
+      検出するURLを制限する
+    </label>
+</form>
+
+</body>
+</html>

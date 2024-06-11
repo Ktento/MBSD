@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #0078d4;
+}
+title {
+    color: #ff0000;
+}
+input[type="text"], textarea {
+    font-size: 20px; /* 文字サイズを20ピクセルに設定 */
+}
+input[type="submit"] {
+    width: 300px; /* 幅を150ピクセルに設定 */
+    height: 100px; /* 高さを40ピクセルに設定 */
+    margin-top: 10px; /* 上部の余白を設定 */
+    margin-left: 650px; /* 左側の余白を設定 */
+    text-align:60px ;
+    font-size:60px
+}
+input[type="checkbox"]{
+    width: 40px; /* 幅を150ピクセルに設定 */
+    height: 40px; /* 高さを40ピクセルに設定 */
+    margin-top: 10px; /* 上部の余白を設定 */
+    margin-left: 300px; /* 左側の余白を設定 */
+
+}
+label {
+    font-size: 40px; /* 任意のフォントサイズ */
+}
+p{
+    font-size: xx-large;
+}
+textarea{
+    resize: none;
+    width: 1500px; /* 幅を300ピクセルに設定 */
+    height: 100px; /* 高さを100ピクセルに設定 */
+}
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    /* Additional responsive styles go here */
+}
+
+.ttl_background3 {
+    font-weight: bold;
+    padding: 0.5em 1em;
+    background-color: #4c9ac0;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .ttl_background3::after {
+    content: '';
+    background-color: #fff;
+    opacity: 0.3;
+    transform: rotate(-65deg);
+    position: absolute;
+    bottom: -250px;
+    right: -250px;
+    width: 300px;
+    height: 500px;
+  }
+
+p {
+    font-weight: bold;
+}
+
