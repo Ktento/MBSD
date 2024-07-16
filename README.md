@@ -26,35 +26,35 @@ Webサイトを網羅的に検査をしできるだけ脆弱性を検出でき�
 
 ### 3. 参考にさせてもらったもの<br>
  [Pythonプログラミング VTuber サプー](https://www.youtube.com/@pythonvtuber9917/videos)
-<br>
+<br><br>
 [【Pythonプログラミング入門】メモ化で高速化！cacheデコレータを使ってみよう！〜初心者向け〜](https://youtu.be/lRaSMlHY3aY?feature=shared)
-<br>
+<br><br>
 [【Pythonプログラミング入門】自作モジュールの使い方を解説！〜VTuberと学習〜 【初心者向け】](https://youtu.be/X3uBMY3JQqM?feature=shared)
-<br>
+<br><br>
 [HTMLでチェックボックスを表示する方法！基本的な作り方と使い方を解説　byウェブカツ #初心者 - Qiita](https://qiita.com/kazukichi/items/1af73244df0e67137531)
-<br>
+<br><br>
 [【バッチファイル】ログの出力方法と日時取得／ログファイル名に日時取得 #bat – Qiita](https://qiita.com/pekosyu/items/a2d416f9f2afe9c40066)
-<br>
+<br><br>
 [ローカルにpythonのCGI環境を構築　ほどよく解説しながらスピード重視で説明するよ](https://jimaru.blog/programming/python/local-cgi-python/)
-<br>
+<br><br>
 [HTMLでformタグのaction属性に複数の送信先を指定する方法を現役エンジニアが解説【初心者向け】](https://magazine.techacademy.jp/magazine/32105)
-<br>
+<br><br>
 [Webサーバーで動くPythonアプリ 【Windows 版】](https://irohaplat.com/windows-python-http-server-calculator-application/)
-<br>
+<br><br>
 [CSSのコピペだけ！おしゃれな見出しのデザイン例まとめ6](https://saruwakakun.com/html-css/reference/h-design)
-<br>
+<br><br>
 [図解！PythonでWEB スクレイピングを始めよう！(サンプルコード付きチュートリアル)](https://ai-inter1.com/python-webscraping/#st-toc-h-2)
-<br>
+<br><br>
 [【HTML】フォーム作成の基本！formとinputの使い方](https://creive.me/archives/13526/)
-<br>
+<br><br>
 [スクレイピング練習場（ベータ）](https://scraping-training.vercel.app/)
-<br>
+<br><br>
 [図解！PythonのRequestsを徹底解説！(インストール・使い方)](https://ai-inter1.com/python-requests/)
-<br>
+<br><br>
 [【コピペで完成】HTML・CSSのみで作る棒グラフのデザイン2選【アニメーション対応】 (pote-chil.com)](https://pote-chil.com/html-maker/bar-chart)
-<br>
+<br><br>
 [table・tr・th・tdタグ | HTMLでの正しい表の構造と使い方・作り方を徹底解説 | Webのいろは (webnoiroha.net)](https://www.webnoiroha.net/html-table/)
-<br>
+<br><br>
 ## 機能
 ## 実行例
 ## 動作条件
