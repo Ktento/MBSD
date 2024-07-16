@@ -25,49 +25,48 @@ Webサイトのコンテンツ内に含まれているMBSD｛××××｝のキ�
 Webサイトを網羅的に検査をしできるだけ脆弱性を検出でき、実際に運用が出来るような自動巡回ツールを作ることを目標として作成を開始した。
 
 3. 参考にさせてもらったもの
-<a href="https://www.youtube.com/@pythonvtuber9917/videos">Pythonプログラミング VTuber サプー</a>
+ [Pythonプログラミング VTuber サプー](https://www.youtube.com/@pythonvtuber9917/videos)
+
+[【Pythonプログラミング入門】メモ化で高速化！cacheデコレータを使ってみよう！〜初心者向け〜](https://youtu.be/lRaSMlHY3aY?feature=shared)
 
 
-<a herf="https://youtu.be/lRaSMlHY3aY?feature=shared">【Pythonプログラミング入門】メモ化で高速化！cacheデコレータを使ってみよう！〜初心者向け〜</a>
+[【Pythonプログラミング入門】自作モジュールの使い方を解説！〜VTuberと学習〜 【初心者向け】](https://youtu.be/X3uBMY3JQqM?feature=shared)
 
 
-<a herf="https://youtu.be/X3uBMY3JQqM?feature=shared">【Pythonプログラミング入門】自作モジュールの使い方を解説！〜VTuberと学習〜 【初心者向け】</a>
+[HTMLでチェックボックスを表示する方法！基本的な作り方と使い方を解説　byウェブカツ #初心者 - Qiita](https://qiita.com/kazukichi/items/1af73244df0e67137531)
 
 
-<a herf="https://qiita.com/kazukichi/items/1af73244df0e67137531">HTMLでチェックボックスを表示する方法！基本的な作り方と使い方を解説　byウェブカツ #初心者 - Qiita</a>
+[【バッチファイル】ログの出力方法と日時取得／ログファイル名に日時取得 #bat – Qiita](https://qiita.com/pekosyu/items/a2d416f9f2afe9c40066)
 
 
-<a herf="https://qiita.com/pekosyu/items/a2d416f9f2afe9c40066">【バッチファイル】ログの出力方法と日時取得／ログファイル名に日時取得 #bat – Qiita</a>
+[ローカルにpythonのCGI環境を構築　ほどよく解説しながらスピード重視で説明するよ](https://jimaru.blog/programming/python/local-cgi-python/)
 
 
-<a herf="https://jimaru.blog/programming/python/local-cgi-python/">ローカルにpythonのCGI環境を構築　ほどよく解説しながらスピード重視で説明するよ</a>
+[HTMLでformタグのaction属性に複数の送信先を指定する方法を現役エンジニアが解説【初心者向け】](https://magazine.techacademy.jp/magazine/32105)
 
 
-<a herf="https://magazine.techacademy.jp/magazine/32105">HTMLでformタグのaction属性に複数の送信先を指定する方法を現役エンジニアが解説【初心者向け】</a>
+[Webサーバーで動くPythonアプリ 【Windows 版】](https://irohaplat.com/windows-python-http-server-calculator-application/)
 
 
-<a herf="https://irohaplat.com/windows-python-http-server-calculator-application/">Webサーバーで動くPythonアプリ 【Windows 版】</a>
+[CSSのコピペだけ！おしゃれな見出しのデザイン例まとめ6](https://saruwakakun.com/html-css/reference/h-design)
 
 
-<a herf="https://saruwakakun.com/html-css/reference/h-design">CSSのコピペだけ！おしゃれな見出しのデザイン例まとめ6</a>
+[図解！PythonでWEB スクレイピングを始めよう！(サンプルコード付きチュートリアル)](https://ai-inter1.com/python-webscraping/#st-toc-h-2)
 
 
-<a herf="https://ai-inter1.com/python-webscraping/#st-toc-h-2">図解！PythonでWEB スクレイピングを始めよう！(サンプルコード付きチュートリアル)</a>
+[【HTML】フォーム作成の基本！formとinputの使い方](https://creive.me/archives/13526/)
 
 
-<a herf="https://creive.me/archives/13526/">【HTML】フォーム作成の基本！formとinputの使い方</a>
+[スクレイピング練習場（ベータ）](https://scraping-training.vercel.app/)
 
 
-<a herf="https://scraping-training.vercel.app/">スクレイピング練習場（ベータ）</a>
+[図解！PythonのRequestsを徹底解説！(インストール・使い方)](https://ai-inter1.com/python-requests/)
 
 
-<a herf="https://ai-inter1.com/python-requests/">図解！PythonのRequestsを徹底解説！(インストール・使い方)</a>
+[【コピペで完成】HTML・CSSのみで作る棒グラフのデザイン2選【アニメーション対応】 (pote-chil.com)](https://pote-chil.com/html-maker/bar-chart)
 
 
-<a herf="https://pote-chil.com/html-maker/bar-chart">【コピペで完成】HTML・CSSのみで作る棒グラフのデザイン2選【アニメーション対応】 (pote-chil.com)</a>
-
-
-<a herf="https://www.webnoiroha.net/html-table/">table・tr・th・tdタグ | HTMLでの正しい表の構造と使い方・作り方を徹底解説 | Webのいろは (webnoiroha.net)</a>
+[table・tr・th・tdタグ | HTMLでの正しい表の構造と使い方・作り方を徹底解説 | Webのいろは (webnoiroha.net)](https://www.webnoiroha.net/html-table/)
 
 
 ## 機能
