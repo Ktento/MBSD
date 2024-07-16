@@ -11,11 +11,63 @@ MBSD Cybersecurity Challenges 2023で作成したWebアプリケーションの�
 5. [ディレクトリ構成](#ディレクトリ構成)
 
 ## 前談
+1. どのような機能を目指したか
+今回作成したツールは、大会を主催しているMBSDから提示されている競技概要に則り自動巡回ツールを作成した。ツールに搭載する為に考えた機能としては、複数あるので個々に挙げる。
+
+診断対象先であるWebサイトの入力フォーム数
+Webサイト内に存在するURLの検出及び出力
+診断対象のパラメータの出力
+Webサイトのコンテンツ内に含まれているMBSD｛××××｝のキーワードの出力
+診断URLにページタイトルが含まれる場合に出力をする
+これら機能に加えて実行時にできるだけ処理時間を短くし実行結果をわかりやすく表示させる機能を持ち合わせた自動巡回ツールの作成を目指した。
+
+2. 目標・目的
+Webサイトを網羅的に検査をしできるだけ脆弱性を検出でき、実際に運用が出来るような自動巡回ツールを作ることを目標として作成を開始した。
+
+3. 参考にさせてもらったもの
+<a href="https://www.youtube.com/@pythonvtuber9917/videos">Pythonプログラミング VTuber サプー</a>
 
 
+<a herf="https://youtu.be/lRaSMlHY3aY?feature=shared">【Pythonプログラミング入門】メモ化で高速化！cacheデコレータを使ってみよう！〜初心者向け〜</a>
 
 
+<a herf="https://youtu.be/X3uBMY3JQqM?feature=shared">【Pythonプログラミング入門】自作モジュールの使い方を解説！〜VTuberと学習〜 【初心者向け】</a>
 
+
+<a herf="https://qiita.com/kazukichi/items/1af73244df0e67137531">HTMLでチェックボックスを表示する方法！基本的な作り方と使い方を解説　byウェブカツ #初心者 - Qiita</a>
+
+
+<a herf="https://qiita.com/pekosyu/items/a2d416f9f2afe9c40066">【バッチファイル】ログの出力方法と日時取得／ログファイル名に日時取得 #bat – Qiita</a>
+
+
+<a herf="https://jimaru.blog/programming/python/local-cgi-python/">ローカルにpythonのCGI環境を構築　ほどよく解説しながらスピード重視で説明するよ</a>
+
+
+<a herf="https://magazine.techacademy.jp/magazine/32105">HTMLでformタグのaction属性に複数の送信先を指定する方法を現役エンジニアが解説【初心者向け】</a>
+
+
+<a herf="https://irohaplat.com/windows-python-http-server-calculator-application/">Webサーバーで動くPythonアプリ 【Windows 版】</a>
+
+
+<a herf="https://saruwakakun.com/html-css/reference/h-design">CSSのコピペだけ！おしゃれな見出しのデザイン例まとめ6</a>
+
+
+<a herf="https://ai-inter1.com/python-webscraping/#st-toc-h-2">図解！PythonでWEB スクレイピングを始めよう！(サンプルコード付きチュートリアル)</a>
+
+
+<a herf="https://creive.me/archives/13526/">【HTML】フォーム作成の基本！formとinputの使い方</a>
+
+
+<a herf="https://scraping-training.vercel.app/">スクレイピング練習場（ベータ）</a>
+
+
+<a herf="https://ai-inter1.com/python-requests/">図解！PythonのRequestsを徹底解説！(インストール・使い方)</a>
+
+
+<a herf="https://pote-chil.com/html-maker/bar-chart">【コピペで完成】HTML・CSSのみで作る棒グラフのデザイン2選【アニメーション対応】 (pote-chil.com)</a>
+
+
+<a herf="https://www.webnoiroha.net/html-table/">table・tr・th・tdタグ | HTMLでの正しい表の構造と使い方・作り方を徹底解説 | Webのいろは (webnoiroha.net)</a>
 
 
 ## 機能
