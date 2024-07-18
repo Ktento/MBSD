@@ -227,10 +227,10 @@ Windowsからの許可を問われる場合があります。その場合は、�
 
 変数htmlを引数として関数を実行すると、html文の中にあるタグの種類の個数を
 tagcountに格納して返す。<br>
-検出するタグは、&lt;input&gt;&lt;form&gt;&lt;textarea&gt;の３つと&lt;input&gt;の属性である　<br>　
-text,file,password,hiddenを対象にして検出している。<br>
-リストtagVulは添え字が0から始まり、<br>
-&lt;input&gt;,text,file,password,hidden,&lt;form&gt;,&lt;textarea&gt;の順に格納されている。<br>
+検出するタグは、&lt;input&gt;&lt;form&gt;&lt;textarea&gt;の３つと&lt;input&gt;の属性である　
+text,file,password,hiddenを対象にして検出している。
+リストtagVulは添え字が0から始まり、
+&lt;input&gt;,text,file,password,hidden,&lt;form&gt;,&lt;textarea&gt;の順に格納されている。
 また、リストtagcountの個数の格納順はリストtagVulと共通である。<br>
 
 
