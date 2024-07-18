@@ -101,7 +101,7 @@ MBSD＿Web＿CSS.zipを解凍しサーバースタート.batファイルを実�
 ### 2. 許可確認画面
 初めて実行する場合Pythonから権限の許可を問われる場合があります。その場合は、許可をしてください。<br>
 ※python自体がインストールされていない場合はインストールしてください。<br>
-![image](https://github.com/user-attachments/assets/741246eb-c4fb-4d55-940e-96f0caa5cb11)
+![image](https://github.com/user-attachments/assets/741246eb-c4fb-4d55-940e-96f0caa5cb11)<br>
 Windowsからの許可を問われる場合があります。その場合は、許可をしてください。<br>
 詳細情報をクリックして、右の画面に遷移するので実行してください。<br>
 ![image](https://github.com/user-attachments/assets/3355312d-cc08-41a6-bb19-73abd89584a0)
@@ -186,143 +186,125 @@ Windowsからの許可を問われる場合があります。その場合は、�
 
 ## 関数の説明
 ### 1. MBSDmain_HTML.py
-検査するURLを受けとりそのURLを元に解析をして結果を表示する
-動作概要
-①検査URLをフォームから受け取る
-②結果を表示するHTMLファイルを取得
-③検査URLの検査を開始
-④検査結果をHTMLのテーブルテンプレートとして保存する
-⑤検査URLの中の脆弱性がある同じドメインのURLの検査を開始
-⑥同様にテーブルテンプレートを保存
-⑦ドメインURLの数だけ⑤、⑥を繰り返す
-⑧②のHTMLファイルを保存したテーブルを表示するように書き換え
-⑨書き換えたHTMLを出力する
+検査するURLを受けとりそのURLを元に解析をして結果を表示する<br>
+動作概要<br>
+①検査URLをフォームから受け取る<br>
+②結果を表示するHTMLファイルを取得<br>
+③検査URLの検査を開始<br>
+④検査結果をHTMLのテーブルテンプレートとして保存する<br>
+⑤検査URLの中の脆弱性がある同じドメインのURLの検査を開始<br>
+⑥同様にテーブルテンプレートを保存<br>
+⑦ドメインURLの数だけ⑤、⑥を繰り返す<br>
+⑧②のHTMLファイルを保存したテーブルを表示するように書き換え<br>
+⑨書き換えたHTMLを出力する<br>
 
 
 ### 2. GetHTML.py
-①GET＿HTML
-引数 : url(文字列型)
-戻り値 : html(文字列型)
+①GET＿HTML<br>
+引数 : url(文字列型)<br>
+戻り値 : html(文字列型)<br>
 
 
-与えられたurlを元にHTMLを取得
-utf-8でhtmlをデコードしエラーが出た場合はShift-JISでデコード
-デコードができなかった場合はからのhtmlの文字列を返す
-メモ化をしており引数が同じの二回目以降の処理は短縮される
+与えられたurlを元にHTMLを取得<br>
+utf-8でhtmlをデコードしエラーが出た場合はShift-JISでデコード<br>
+デコードができなかった場合はからのhtmlの文字列を返す<br>
+メモ化をしており引数が同じの二回目以降の処理は短縮される<br>
 
 ### 3. GetTAG.py
-①GET_TAG
-引数 : html(文字列型)
-戻り値 : taglist(文字列型配列)
+①GET_TAG<br>
+引数 : html(文字列型)<br>
+戻り値 : taglist(文字列型配列)<br>
 
-与えられたhtmlを元に存在するタグを抽出。
-タグを一つ一つ分けて配列に格納
+与えられたhtmlを元に存在するタグを抽出。<br>
+タグを一つ一つ分けて配列に格納<br>
 
 
 ### 4. INPUT.py
-　①GET＿INPUT
-　引数 : 文字列型　html…html文が文字列として格納されている。
-　戻り値 ：リスト  tagVul…タグの種類
-   リスト  tagcount…検出したタグの個数
+　①GET＿INPUT<br>
+　引数 : 文字列型　html…html文が文字列として格納されている。<br>
+　戻り値 ：リスト  tagVul…タグの種類<br>
+  リスト  tagcount…検出したタグの個数<br>
 
 　変数htmlを引数として関数を実行すると、html文の中にあるタグの種類の個数を
-　tagcountに格納して返す。
-　検出するタグは、<input><form><textarea>の３つと、<input>の属性である　　
-　text,file,password,hiddenを対象にして検出している。
-　リストtagVulは添え字が0から始まり、
-　<input>,text,file,password,hidden,<form>,<textarea>の順に格納されている。
-　また、リストtagcountの個数の格納順はリストtagVulと共通である。
+　tagcountに格納して返す。<br>
+　検出するタグは、<input><form><textarea>の３つと、<input>の属性である　<br>　
+　text,file,password,hiddenを対象にして検出している。<br>
+　リストtagVulは添え字が0から始まり、<br>
+　<input>,text,file,password,hidden,<form>,<textarea>の順に格納されている。<br>
+　また、リストtagcountの個数の格納順はリストtagVulと共通である。<br>
 
 
 ### 5. MBSD＿SEARCH.py
-　①MBSD_SEARCH
-　引数 : html(文字列型)
-　戻り値 : result(文字列型配列)
+　①MBSD_SEARCH<br>
+　引数 : html(文字列型)<br>
+　戻り値 : result(文字列型配列)<br>
 
-　与えられたhtmlの中からMBSD{XXXX}のXXXXの内容があるか探す。
-　あった場合は配列に格納してその結果を返す。
+　与えられたhtmlの中からMBSD{XXXX}のXXXXの内容があるか探す。<br>
+　あった場合は配列に格納してその結果を返す。<br>
 
 
 ### 6. mbsd_title.py
-　①HTML_TITLE
-　引数 : html(文字列型)
-　戻り値 : title(文字列型配列)
+　①HTML_TITLE<br>
+　引数 : html(文字列型)<br>
+　戻り値 : title(文字列型配列)<br>
 
-　与えられたhtmlからタイトルを抽出しその結果を配列で返す。
-
-
-
-
-
+　与えられたhtmlからタイトルを抽出しその結果を配列で返す。<br>
 
 ### 7. url_Getter.py
-    ①getURL(url,html):
-  　引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)
-   　戻り値: urls(文字列型配列)
+    ①getURL(url,html) <br>
+  　引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)<br>
+   　戻り値: urls(文字列型配列)<br>
 
-　　アクセス先に含まれる別のURLを重複がないように取り出す。(複雑すぎるパラメー
-　　タを含む場合はそのURLは取り出せない)
-　　この関数は<a>タグ内のhrefのリンクとhtml文書を解析してURLらしきものを全
-　　て検出できるようにしました。この解析処理を高速に終わらせるために正規表現を用
-　　いました。
+　　アクセス先に含まれる別のURLを重複がないように取り出す。(複雑すぎるパラメータを含む場合はそのURLは取り出せない)<br>
+　　この関数は<a>タグ内のhrefのリンクとhtml文書を解析してURLらしきものを全て検出できるようにしました。この解析処理を高速に終わらせる
+    ために正規表現を用いました。<br>
 
 
- 　②del_equal_url(urls):
-  　引数:urls(文字列型配列)
-  　戻り値: urls(文字列型配列)
+ 　②del_equal_url(urls)<br>
+  　引数:urls(文字列型配列)<br>
+  　戻り値: urls(文字列型配列)<br>
 
-　　同じURLが含まれていた場合に削除します
-　　mark_visited(url),is_visited(url),reset_visited_urls()の関数を用いて同じURLを削除す
-　　る機構を作りました。使う関数ごとに差別化する(保存する領域を差別化する)ために
-　　del_equal_url(urls)内では同じ動作をする別の関数を用いています。
+　　同じURLが含まれていた場合に削除します<br>
+　　mark_visited(url),is_visited(url),reset_visited_urls()の関数を用いて同じURLを削除する機構を作りました。使う関数ごとに差別化する(保存する領域を差別化する)ためにdel_equal_url(urls)内では同じ動作をする別の関数を用いています。<br>
 
 
 ### 8. url_Host.py
-   　①getURL_host(url):
-   　引数:url(文字列型)
-   　戻り値: host(文字列型)
-
-  　ホスト名を取得します
-
-
-
-
-
-
-
+   　①getURL_host(url)<br>
+   　引数:url(文字列型)<br>
+   　戻り値: host(文字列型)<br>
+  　ホスト名を取得します<br>
 
 
 ### 9. url_Parameter.py
-    ① getURL_para(url):
-    引数:url(文字列型)
-    戻り値:passstr(文字列型)
+    ① getURL_para(url)<br>
+    引数:url(文字列型)<br>
+    戻り値:passstr(文字列型)<br>
 
-　URLを取得した際のパラメータが'&'などの文字列が'&amp;'のようにエスケープされる
-　とパラメータが正常に取得できないので正常に取得できるように工夫しました。
+　URLを取得した際のパラメータが'&'などの文字列が'&amp;'のようにエスケープされる<br>
+　とパラメータが正常に取得できないので正常に取得できるように工夫しました。<br>
 
-    ②getURL_path_para(url):
-    引数:url(文字列型)
-    戻り値:path_parameters(文字列型)又はなし
+    ②getURL_path_para(url)<br>
+    引数:url(文字列型)<br>
+    戻り値:path_parameters(文字列型)又はなし<br>
 
-　URLに含まれるパスパラメータのみを取得する。パスパラメータがない場合は戻り値を
-　返されません。
+　URLに含まれるパスパラメータのみを取得する。パスパラメータがない場合は戻り値は返されません。<br>
 
 
 ### 10. is_image_url.py
-　①is_image_url(url):
-　引数:url(文字列型)
-　戻り値:Ture、False
+　①is_image_url(url)<br>
+　引数:url(文字列型)<br>
+　戻り値:Ture、False<br>
 
 　URLに画像ファイル、.js、.json、.cssを含むURLがある  時にTrue,ない時にFalseが
-　戻り値として返す正規表現を用いてURL(文字列型)に対する検索をかけました。より高
-　速に解析できると考えます。
+　戻り値として返す正規表現を用いてURL(文字列型)に対する検索をかけました。<br>
+　より高速に解析できると考えます。<br>
 
-　②image_del(urls):
-　引数:urls(文字列型配列)
-    戻り値:urls(文字列型配列)
+　②image_del(urls)<br>
+　引数:urls(文字列型配列)<br>
+　戻り値:urls(文字列型配列)<br>
 
 　URLにis_image_url(url)を適用、TrueのときにそのURLを削除しurlsの上書き保存し
-　ます。
+　ます。<br>
 
 
 
@@ -330,71 +312,68 @@ utf-8でhtmlをデコードしエラーが出た場合はShift-JISでデコー�
 
 
 ### 11. url_Visited.py
-　①mark_visited(url):
-　引数:url(文字列型)
-　戻り値:なし
+　①mark_visited(url)<br>
+　引数:url(文字列型)<br>
+　戻り値:なし<br>
 
-URLを保存します(マークする)。
+URLを保存します(マークする)。<br>
 
 
-　②is_visited(url):
-　引数:url(文字列型)
-　戻り値:Ture、False
+　②is_visited(url)<br>
+　引数:url(文字列型)<br>
+　戻り値:Ture、False<br>
 
 　url(文字列型)が保存されている(mark_visited(url)が既に実行されている)ときにTrue,そ
-　れ以外はFalseが戻り値として返します。
+　れ以外はFalseが戻り値として返します。<br>
 
 
-　③reset_visited_urls():
-　引数:なし
-　戻り値:なし
+　③reset_visited_urls()<br>
+　引数:なし<br>
+　戻り値:なし<br>
 
-　mark_visited(url)で保存されたデータを全て削除します。
+　mark_visited(url)で保存されたデータを全て削除します。<br>
 
 
 ### 12. url_Domain_Select_Getter.py
-　①is_getURL_selected_by_domain(source_url, comparison_url):
-　引数:source_url(文字列型),comparison_urll(文字列型)
-　戻り値:Ture、False
+　①is_getURL_selected_by_domain(source_url, comparison_url)<br>
+　引数:source_url(文字列型),comparison_urll(文字列型)<br>
+　戻り値:Ture、False<br>
 
-    引数として指定されたURL(文字列型)2つに対して、ドメイン名が同じの場合True,ド
-    イン名が異なる時にFalseが戻り値として返します。
-
+引数として指定されたURL(文字列型)2つに対して、ドメイン名が同じの場合True,ドイン名が異なる時にFalseが戻り値として返します。<br>
 
 
 
 
 
 
-   ②getURL_selected_by_domain(url,html):
-   引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)
-   戻り値:domain_urls(文字列型配列)
 
-   引数として指定されたURL(文字列型)とhtml(html文書を文字列で取得したもの)に対し
-   てドメイン名で絞りだした後にimage_del(urls)を用いて画像URLなどを削除します。そ
-   の結果を戻り値として返します。
+   ②getURL_selected_by_domain(url,html)<br>
+   引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)<br>
+   戻り値:domain_urls(文字列型配列)<br>
+
+   引数として指定されたURL(文字列型)とhtml(html文書を文字列で取得したもの)に対してドメイン名で絞りだした後にimage_del(urls)を用いて画像URLなどを削除します。その結果を戻り値として返します。<br>
 
 
 ### 13. url_Crawler .py
-　①url_crawling(url,html):
-　引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)
-　CRAWLING_RESTRICTIONの値を変えることで制限を変えることができる。
-　値を増やすと検出するURLの個数が少なくなる。(初期値3)
+　①url_crawling(url,html)<br>
+　引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)<br>
+　CRAWLING_RESTRICTIONの値を変えることで制限を変えることができる。<br>
+　値を増やすと検出するURLの個数が少なくなる。(初期値3)<br>
 　例：CRAWLING_RESTRICTIONの値が３の時、開始URLを含んで３個までのURLを取得してそこまでのURLのクローリングを実行し検査する
-　戻り値: crawling_urls(文字列型配列)
+　戻り値: crawling_urls(文字列型配列)<br>
 
 
 　引数として指定されたurl(文字列型)とhtml(html文書を文字列で取得したもの)に対し
-　てクローリングを実行し、結果を戻り値として返します
+　てクローリングを実行し、結果を戻り値として返します<br>
 
 ### 14. danger_url.py
-　①danger_url.py(html):
-　引数:html(html文書を文字列で取得したもの:文字列型)
+　①danger_url.py(html)<br>
+　引数:html(html文書を文字列で取得したもの:文字列型)<br>
 　戻り値:ht_mbsd(文字列型配列),ht_title(文字列型配列),tagVul(文字列型配列), 
-　tagcount(整数列型配列),flag(整数型)
+　tagcount(整数列型配列),flag(整数型)<br>
 
 　引数として指定されたhtml(html文書を文字列で取得したもの)に対してMBSD{xxxx}の
 　xxxxの文字をht_mbsd、タイトルをht_title、脆弱性タグリスト名をtagVul、それに対応
-　するタグの個数をtagcountに格納して返します。
-　flagは脆弱性が0の時に1になって返します。(ht_mbsd,tagcount全てが空値か0の時)
+　するタグの個数をtagcountに格納して返します。<br>
+　flagは脆弱性が0の時に1になって返します。(ht_mbsd,tagcount全てが空値か0の時)<br>
 
