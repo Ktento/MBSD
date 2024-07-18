@@ -205,10 +205,10 @@ Windowsからの許可を問われる場合があります。その場合は、�
 戻り値 : html(文字列型)<br>
 
 
-与えられたurlを元にHTMLを取得<br>
-utf-8でhtmlをデコードしエラーが出た場合はShift-JISでデコード<br>
-デコードができなかった場合はからのhtmlの文字列を返す<br>
-メモ化をしており引数が同じの二回目以降の処理は短縮される<br>
+　与えられたurlを元にHTMLを取得<br>
+　utf-8でhtmlをデコードしエラーが出た場合はShift-JISでデコード<br>
+　デコードができなかった場合はからのhtmlの文字列を返す<br>
+　メモ化をしており引数が同じの二回目以降の処理は短縮される<br>
 
 ### 3. GetTAG.py
 - ①GET_TAG<br>
@@ -227,10 +227,10 @@ utf-8でhtmlをデコードしエラーが出た場合はShift-JISでデコー�
 
 変数htmlを引数として関数を実行すると、html文の中にあるタグの種類の個数を
 tagcountに格納して返す。<br>
-検出するタグは、<input><form><textarea>の３つと、<input>の属性である　<br>　
+検出するタグは、&lt;input&gt;&lt;form&gt;&lt;textarea&gt;の３つと&lt;input&gt;の属性である　<br>　
 text,file,password,hiddenを対象にして検出している。<br>
 リストtagVulは添え字が0から始まり、<br>
-<input>,text,file,password,hidden,<form>,<textarea>の順に格納されている。<br>
+&lt;input&gt;,text,file,password,hidden,&lt;form&gt;,&lt;textarea&gt;の順に格納されている。<br>
 また、リストtagcountの個数の格納順はリストtagVulと共通である。<br>
 
 
