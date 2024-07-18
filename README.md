@@ -373,3 +373,4 @@ xxxxの文字をht_mbsd、タイトルをht_title、脆弱性タグリスト名�
 するタグの個数をtagcountに格納して返します。<br>
 flagは脆弱性が0の時に1になって返します。(ht_mbsd,tagcount全てが空値か0の時)<br>
 
+<p align="right">(<a href="#top">トップへ</a>)</p>
