@@ -94,6 +94,24 @@ Webサイトを網羅的に検査をしできるだけ脆弱性を検出でき�
 <br>検出可能な脆弱性：クエリ文字インジェクション<br><br>
 
 ## 実行例
+### 1. サーバースタート.batファイルの実行
+MBSD＿Web＿CSS.zipを解凍しサーバースタート.batファイルを実行してください
+![image](https://github.com/user-attachments/assets/044757d8-2bc3-42ca-9795-15f39f039f79)
+### 2. 許可確認画面
+初めて実行する場合Pythonから権限の許可を問われる場合があります。その場合は、許可をしてください。
+※python自体がインストールされていない場合はインストールしてください。
+![image](https://github.com/user-attachments/assets/741246eb-c4fb-4d55-940e-96f0caa5cb11)
+Windowsからの許可を問われる場合があります。その場合は、許可をしてください。詳細情報をクリックして、右の画面に遷移するので実行してください。
+![image](https://github.com/user-attachments/assets/3355312d-cc08-41a6-bb19-73abd89584a0)
+### 3. 診断のツールの実行
+立ち上がったらテキストフィールドに検索対象のURLを入力し送信ボタンを押してください。検出するURLを制限する場所にチェックを入れると検査するURLの個数が制限されます。
+※URL入力欄には自分で空白(スペース)や、改行を入力しないでください。
+![image](https://github.com/user-attachments/assets/b6d18355-8677-4d46-9da2-773132798a28)
+### 4. 実行結果の確認
+このような形にになれば検査完了です。
+※棒グラフの長さは適切でないときがあります
+![image](https://github.com/user-attachments/assets/30788f85-29ba-4678-b595-afa3a1276e65)
+![image](https://github.com/user-attachments/assets/709f5baf-458f-435a-b5d9-40ad13197f81)
 ## 動作条件
 | 言語・フレームワーク   | バージョン |
 | --------------------- | ---------- |
