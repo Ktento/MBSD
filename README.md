@@ -200,7 +200,7 @@ Windowsからの許可を問われる場合があります。その場合は、�
 
 
 ### 2. GetHTML.py
-①GET＿HTML<br>
+- ①GET＿HTML<br>
 引数 : url(文字列型)<br>
 戻り値 : html(文字列型)<br>
 
@@ -211,7 +211,7 @@ utf-8でhtmlをデコードしエラーが出た場合はShift-JISでデコー�
 メモ化をしており引数が同じの二回目以降の処理は短縮される<br>
 
 ### 3. GetTAG.py
-①GET_TAG<br>
+- ①GET_TAG<br>
 引数 : html(文字列型)<br>
 戻り値 : taglist(文字列型配列)<br>
 
@@ -220,7 +220,7 @@ utf-8でhtmlをデコードしエラーが出た場合はShift-JISでデコー�
 
 
 ### 4. INPUT.py
-①GET＿INPUT<br>
+- ①GET＿INPUT<br>
 引数 : 文字列型　html…html文が文字列として格納されている。<br>
 戻り値 ：リスト  tagVul…タグの種類<br>
 リスト  tagcount…検出したタグの個数<br>
@@ -235,7 +235,7 @@ text,file,password,hiddenを対象にして検出している。<br>
 
 
 ### 5. MBSD＿SEARCH.py
-①MBSD_SEARCH<br>
+- ①MBSD_SEARCH<br>
 引数 : html(文字列型)<br>
 戻り値 : result(文字列型配列)<br>
 
@@ -244,14 +244,14 @@ text,file,password,hiddenを対象にして検出している。<br>
 
 
 ### 6. mbsd_title.py
-①HTML_TITLE<br>
+- ①HTML_TITLE<br>
 引数 : html(文字列型)<br>
 戻り値 : title(文字列型配列)<br>
 
 与えられたhtmlからタイトルを抽出しその結果を配列で返す。<br>
 
 ### 7. url_Getter.py
-①getURL(url,html) <br>
+- ①getURL(url,html) <br>
 引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)<br>
 戻り値: urls(文字列型配列)<br>
 
@@ -260,7 +260,7 @@ text,file,password,hiddenを対象にして検出している。<br>
 ために正規表現を用いました。<br>
 
 
-②del_equal_url(urls)<br>
+- ②del_equal_url(urls)<br>
 引数:urls(文字列型配列)<br>
 戻り値: urls(文字列型配列)<br>
 
@@ -269,21 +269,21 @@ mark_visited(url),is_visited(url),reset_visited_urls()の関数を用いて同�
 
 
 ### 8. url_Host.py
-①getURL_host(url)<br>
+- ①getURL_host(url)<br>
 引数:url(文字列型)<br>
 戻り値: host(文字列型)<br>
 ホスト名を取得します<br>
 
 
 ### 9. url_Parameter.py
-① getURL_para(url)<br>
+- ① getURL_para(url)<br>
 引数:url(文字列型)<br>
 戻り値:passstr(文字列型)<br>
 
 URLを取得した際のパラメータが'&'などの文字列が'&amp;'のようにエスケープされる<br>
 とパラメータが正常に取得できないので正常に取得できるように工夫しました。<br>
 
-②getURL_path_para(url)<br>
+- ②getURL_path_para(url)<br>
 引数:url(文字列型)<br>
 戻り値:path_parameters(文字列型)又はなし<br>
 
@@ -291,7 +291,7 @@ URLに含まれるパスパラメータのみを取得する。パスパラメ�
 
 
 ### 10. is_image_url.py
-①is_image_url(url)<br>
+- ①is_image_url(url)<br>
 引数:url(文字列型)<br>
 戻り値:Ture、False<br>
 
@@ -299,7 +299,7 @@ URLに画像ファイル、.js、.json、.cssを含むURLがある  時にTrue,�
 戻り値として返す正規表現を用いてURL(文字列型)に対する検索をかけました。<br>
 より高速に解析できると考えます。<br>
 
-②image_del(urls)<br>
+- ②image_del(urls)<br>
 引数:urls(文字列型配列)<br>
 戻り値:urls(文字列型配列)<br>
 
@@ -308,14 +308,14 @@ URLにis_image_url(url)を適用、TrueのときにそのURLを削除しurlsの�
 
 
 ### 11. url_Visited.py
-①mark_visited(url)<br>
+- ①mark_visited(url)<br>
 引数:url(文字列型)<br>
 戻り値:なし<br>
 
 URLを保存します(マークする)。<br>
 
 
-②is_visited(url)<br>
+- ②is_visited(url)<br>
 引数:url(文字列型)<br>
 戻り値:Ture、False<br>
 
@@ -323,7 +323,7 @@ url(文字列型)が保存されている(mark_visited(url)が既に実行され
 れ以外はFalseが戻り値として返します。<br>
 
 
-③reset_visited_urls()<br>
+- ③reset_visited_urls()<br>
 引数:なし<br>
 戻り値:なし<br>
 
@@ -331,7 +331,7 @@ mark_visited(url)で保存されたデータを全て削除します。<br>
 
 
 ### 12. url_Domain_Select_Getter.py
-①is_getURL_selected_by_domain(source_url, comparison_url)<br>
+- ①is_getURL_selected_by_domain(source_url, comparison_url)<br>
 引数:source_url(文字列型),comparison_urll(文字列型)<br>
 戻り値:Ture、False<br>
 
@@ -343,7 +343,7 @@ mark_visited(url)で保存されたデータを全て削除します。<br>
 
 
 
-②getURL_selected_by_domain(url,html)<br>
+- ②getURL_selected_by_domain(url,html)<br>
 引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)<br>
 戻り値:domain_urls(文字列型配列)<br>
 
@@ -351,7 +351,7 @@ mark_visited(url)で保存されたデータを全て削除します。<br>
 
 
 ### 13. url_Crawler .py
-①url_crawling(url,html)<br>
+- ①url_crawling(url,html)<br>
 引数:url(文字列型),html(html文書を文字列で取得したもの:文字列型)<br>
 CRAWLING_RESTRICTIONの値を変えることで制限を変えることができる。<br>
 値を増やすと検出するURLの個数が少なくなる。(初期値3)<br>
@@ -363,7 +363,7 @@ CRAWLING_RESTRICTIONの値を変えることで制限を変えることができ
 てクローリングを実行し、結果を戻り値として返します<br>
 
 ### 14. danger_url.py
-①danger_url.py(html)<br>
+- ①danger_url.py(html)<br>
 引数:html(html文書を文字列で取得したもの:文字列型)<br>
 戻り値:ht_mbsd(文字列型配列),ht_title(文字列型配列),tagVul(文字列型配列), 
 tagcount(整数列型配列),flag(整数型)<br>
