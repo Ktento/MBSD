@@ -24,6 +24,8 @@ MBSD Cybersecurity Challenges 2023 で作成した Web アプリケーション�
 
 ### 6. [関数の説明](#関数の説明)
 
+### 7. [参考文献](#参考文献)
+
 ## 前談
 
 ### 1. どのような機能を目指したか
@@ -40,39 +42,6 @@ Web サイトのコンテンツ内に含まれている`MBSD｛××××｝`の�
 ### 2. 目標・目的
 
 Web サイトを網羅的に検査をしできるだけ脆弱性を検出でき、実際に運用が出来るような自動巡回ツールを作ることを目標として作成を開始した。
-
-### 3. 参考にさせてもらったもの<br>
-
-[Python プログラミング VTuber サプー](https://www.youtube.com/@pythonvtuber9917/videos)
-<br><br>
-[【Python プログラミング入門】メモ化で高速化！cache デコレータを使ってみよう！〜初心者向け〜](https://youtu.be/lRaSMlHY3aY?feature=shared)
-<br><br>
-[【Python プログラミング入門】自作モジュールの使い方を解説！〜VTuber と学習〜 【初心者向け】](https://youtu.be/X3uBMY3JQqM?feature=shared)
-<br><br>
-[HTML でチェックボックスを表示する方法！基本的な作り方と使い方を解説　 by ウェブカツ #初心者 - Qiita](https://qiita.com/kazukichi/items/1af73244df0e67137531)
-<br><br>
-[【バッチファイル】ログの出力方法と日時取得／ログファイル名に日時取得 #bat – Qiita](https://qiita.com/pekosyu/items/a2d416f9f2afe9c40066)
-<br><br>
-[ローカルに python の CGI 環境を構築　ほどよく解説しながらスピード重視で説明するよ](https://jimaru.blog/programming/python/local-cgi-python/)
-<br><br>
-[HTML で form タグの action 属性に複数の送信先を指定する方法を現役エンジニアが解説【初心者向け】](https://magazine.techacademy.jp/magazine/32105)
-<br><br>
-[Web サーバーで動く Python アプリ 【Windows 版】](https://irohaplat.com/windows-python-http-server-calculator-application/)
-<br><br>
-[CSS のコピペだけ！おしゃれな見出しのデザイン例まとめ 6](https://saruwakakun.com/html-css/reference/h-design)
-<br><br>
-[図解！Python で WEB スクレイピングを始めよう！(サンプルコード付きチュートリアル)](https://ai-inter1.com/python-webscraping/#st-toc-h-2)
-<br><br>
-[【HTML】フォーム作成の基本！form と input の使い方](https://creive.me/archives/13526/)
-<br><br>
-[スクレイピング練習場（ベータ）](https://scraping-training.vercel.app/)
-<br><br>
-[図解！Python の Requests を徹底解説！(インストール・使い方)](https://ai-inter1.com/python-requests/)
-<br><br>
-[【コピペで完成】HTML・CSS のみで作る棒グラフのデザイン 2 選【アニメーション対応】 (pote-chil.com)](https://pote-chil.com/html-maker/bar-chart)
-<br><br>
-[table・tr・th・td タグ | HTML での正しい表の構造と使い方・作り方を徹底解説 | Web のいろは (webnoiroha.net)](https://www.webnoiroha.net/html-table/)
-<br><br>
 
 ## 機能
 
@@ -398,5 +367,38 @@ mark_visited(url)で保存されたデータを全て削除します。<br>
 xxxx の文字を ht_mbsd、タイトルを ht_title、脆弱性タグリスト名を tagVul、それに対応
 するタグの個数を tagcount に格納して返します。<br>
 flag は脆弱性が 0 の時に 1 になって返します。(ht_mbsd,tagcount 全てが空値か 0 の時)<br>
+
+## 7. 参考文献<br>
+
+[Python プログラミング VTuber サプー](https://www.youtube.com/@pythonvtuber9917/videos)
+<br><br>
+[【Python プログラミング入門】メモ化で高速化！cache デコレータを使ってみよう！〜初心者向け〜](https://youtu.be/lRaSMlHY3aY?feature=shared)
+<br><br>
+[【Python プログラミング入門】自作モジュールの使い方を解説！〜VTuber と学習〜 【初心者向け】](https://youtu.be/X3uBMY3JQqM?feature=shared)
+<br><br>
+[HTML でチェックボックスを表示する方法！基本的な作り方と使い方を解説　 by ウェブカツ #初心者 - Qiita](https://qiita.com/kazukichi/items/1af73244df0e67137531)
+<br><br>
+[【バッチファイル】ログの出力方法と日時取得／ログファイル名に日時取得 #bat – Qiita](https://qiita.com/pekosyu/items/a2d416f9f2afe9c40066)
+<br><br>
+[ローカルに python の CGI 環境を構築　ほどよく解説しながらスピード重視で説明するよ](https://jimaru.blog/programming/python/local-cgi-python/)
+<br><br>
+[HTML で form タグの action 属性に複数の送信先を指定する方法を現役エンジニアが解説【初心者向け】](https://magazine.techacademy.jp/magazine/32105)
+<br><br>
+[Web サーバーで動く Python アプリ 【Windows 版】](https://irohaplat.com/windows-python-http-server-calculator-application/)
+<br><br>
+[CSS のコピペだけ！おしゃれな見出しのデザイン例まとめ 6](https://saruwakakun.com/html-css/reference/h-design)
+<br><br>
+[図解！Python で WEB スクレイピングを始めよう！(サンプルコード付きチュートリアル)](https://ai-inter1.com/python-webscraping/#st-toc-h-2)
+<br><br>
+[【HTML】フォーム作成の基本！form と input の使い方](https://creive.me/archives/13526/)
+<br><br>
+[スクレイピング練習場（ベータ）](https://scraping-training.vercel.app/)
+<br><br>
+[図解！Python の Requests を徹底解説！(インストール・使い方)](https://ai-inter1.com/python-requests/)
+<br><br>
+[【コピペで完成】HTML・CSS のみで作る棒グラフのデザイン 2 選【アニメーション対応】 (pote-chil.com)](https://pote-chil.com/html-maker/bar-chart)
+<br><br>
+[table・tr・th・td タグ | HTML での正しい表の構造と使い方・作り方を徹底解説 | Web のいろは (webnoiroha.net)](https://www.webnoiroha.net/html-table/)
+<br><br>
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
