@@ -368,7 +368,7 @@ xxxx の文字を ht_mbsd、タイトルを ht_title、脆弱性タグリスト�
 するタグの個数を tagcount に格納して返します。<br>
 flag は脆弱性が 0 の時に 1 になって返します。(ht_mbsd,tagcount 全てが空値か 0 の時)<br>
 
-## 7. 参考文献<br>
+##　参考文献
 
 [Python プログラミング VTuber サプー](https://www.youtube.com/@pythonvtuber9917/videos)
 <br><br>
