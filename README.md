@@ -83,9 +83,9 @@ Web サイトを網羅的に検査をしできるだけ脆弱性を検出でき�
 
 ## 実行例
 
-### 1. サーバースタート.bat ファイルの実行
+### 1. start.bat ファイルの実行
 
-MBSD＿Web＿CSS.zip を解凍しサーバースタート.bat ファイルを実行してください。<br>
+MBSD＿Web＿CSS.zip を解凍しstart.bat ファイルを実行してください。<br>
 ![image](https://github.com/user-attachments/assets/044757d8-2bc3-42ca-9795-15f39f039f79)
 
 ### 2. 許可確認画面
@@ -148,7 +148,7 @@ Windows からの許可を問われる場合があります。その場合は、
         │  hello.css
         │  hello.html
         │  pythonin.bat
-        │  サーバースタート.bat
+        │  start.bat
         │
         ├─.vscode
         │      launch.json
