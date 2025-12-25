@@ -74,11 +74,15 @@ MBSD Cybersecurity Challenges 2023 で作成した Web アプリケーション�
 
 ## 実行例
 
-### 1. start.bat ファイルの実行
+### 1. インストール
+```bash
+$git clone [https://github.com/Ktento/MBSD.git](https://github.com/Ktento/MBSD.git) cd MBSD
+```
 
-MBSD＿Web＿CSS.zip を解凍しstart.bat ファイルを実行してください。<br>
+### 2. start.bat ファイルの実行
+start.bat ファイルを実行してください。<br>
 
-### 2. 許可確認画面
+### 3. 許可確認画面
 
 初めて実行する場合 Python から権限の許可を問われる場合があります。その場合は、許可をしてください。<br>
 ※python 自体がインストールされていない場合はインストールしてください。<br>
@@ -87,14 +91,14 @@ Windows からの許可を問われる場合があります。その場合は、
 詳細情報をクリックして、右の画面に遷移するので実行してください。<br>
 ![image](https://github.com/user-attachments/assets/3355312d-cc08-41a6-bb19-73abd89584a0)
 
-### 3. 診断のツールの実行
+### 4. 診断のツールの実行
 
 立ち上がったらテキストフィールドに検索対象の URL を入力し送信ボタンを押してください。<br>
 検出する URL を制限する場所にチェックを入れると検査する URL の個数が制限されます。<br>
 ※URL 入力欄には自分で空白(スペース)や、改行を入力しないでください。<br>
 ![image](https://github.com/user-attachments/assets/b6d18355-8677-4d46-9da2-773132798a28)
 
-### 4. 実行結果の確認
+### 5. 実行結果の確認
 
 このような形にになれば検査完了です。<br>
 ※棒グラフの長さは適切でないときがあります。<br>
