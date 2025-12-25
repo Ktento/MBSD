@@ -77,7 +77,6 @@ MBSD Cybersecurity Challenges 2023 で作成した Web アプリケーション�
 ### 1. start.bat ファイルの実行
 
 MBSD＿Web＿CSS.zip を解凍しstart.bat ファイルを実行してください。<br>
-![image](https://github.com/user-attachments/assets/044757d8-2bc3-42ca-9795-15f39f039f79)
 
 ### 2. 許可確認画面
 
