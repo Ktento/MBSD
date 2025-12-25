@@ -128,52 +128,48 @@ Windows からの許可を問われる場合があります。その場合は、
 
 <pre>
 .
-│  .gitattributes.txt
-│  MBSD_.docx
-│  MBSD_Web_CSS_26.zip
-│  MBSD__2.docx
+│  .gitignore
 │  README.md
-│
-└─MBSD_Web_CSS_26
-    └─MBSD_Web_CSS
-        │  answer.html
-        │  hello.css
-        │  hello.html
-        │  pythonin.bat
-        │  start.bat
-        │
-        ├─.vscode
-        │      launch.json
-        │      settings.json
-        │      tasks.json
-        │
-        ├─cgi-bin
-        │  └─team_motiduki
-        │      │  MBSDmain.py
-        │      │  MBSDmain_HTML.py
-        │      │  MBSD_test.html
-        │      │  テーブル.html
-        │      │
-        │      └─MBSD_Tools
-        │          │  danger_url.py
-        │          │  GetHTML.py
-        │          │  GetTAG.py
-        │          │  HTML_CONTENT.py
-        │          │  INPUT.py
-        │          │  is_image_url.py
-        │          │  MBSD_SEARCH.py
-        │          │  mbsd_title.py
-        │          │  url_Crawler.py
-        │          │  url_Domain_Select_Getter.py
-        │          │  url_Getter.py
-        │          │  url_Host.py
-        │          │  url_Parameter.py
-        │          │  url_Visited.py
-        │          │  __init__.py
-        │          │
-        │          └─__pycache__
-        └─css
-            └─answer.css
+│  
+└─MBSD_Web_CSS
+    │  answer.html
+    │  hello.css
+    │  hello.html
+    │  MBSD_Web_CSS_26.zip
+    │  pythonin.bat
+    │  start.bat
+    │  
+    ├─.vscode
+    │      launch.json
+    │      settings.json
+    │      tasks.json
+    │
+    ├─cgi-bin
+    │  └─team_motiduki
+    │      │  MBSDmain.py
+    │      │  MBSDmain_HTML.py
+    │      │  MBSD_test.html
+    │      │  テーブル.html
+    │      │
+    │      └─MBSD_Tools
+    │              danger_url.py
+    │              GetHTML.py
+    │              GetTAG.py
+    │              HTML_CONTENT.py
+    │              INPUT.py
+    │              is_image_url.py
+    │              MBSD_SEARCH.py
+    │              mbsd_title.py
+    │              url_Crawler.py
+    │              url_Domain_Select_Getter.py
+    │              url_Getter.py
+    │              url_Host.py
+    │              url_Parameter.py
+    │              url_Visited.py
+    │              __init__.py
+    │
+    └─css
+       |__answer.css
 </pre>
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
